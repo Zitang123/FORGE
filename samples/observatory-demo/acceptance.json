@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "criteria": ["Validate exact 2x2 nested-list matrices", "Return exact determinant and inverse without mutation", "Reject singular inverse with ValueError", "Provide rational-string JSON CLI and friendly exit-2 errors", "Record real progress and verify meaningful tests"],
+  "status": "own_tests_passed_pending_independent_review",
+  "note": "Own verification and independent checks are recorded separately."
+}

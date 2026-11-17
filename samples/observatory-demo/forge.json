@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "engine_version": "3.1.0",
+  "name": "Observatory Sandbox",
+  "specialization": "general",
+  "brief": "A small local mathematics utility built while FORGE Observatory records real progress. Further prompts in this project should emit project-local events to its Observatory."
+}

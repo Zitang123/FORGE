@@ -1,0 +1,33 @@
+name: Checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-latest
+            python: '3.11'
+          - os: macos-latest
+            python: '3.13'
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python3 build.py
+      - run: python3 -m unittest discover -s engine/tests
+        env:
+          PYTHONPATH: engine
+      - run: node engine/forge/web/verify.mjs
+      - run: python3 benchmarks/resume.py --output "$RUNNER_TEMP/forge-results.json"
+      - run: diff -u benchmarks/results.json "$RUNNER_TEMP/forge-results.json"

@@ -1,0 +1,150 @@
+{
+  "policy_results": {
+    "always_rebuild": {
+      "input_changed": {
+        "checks": 1000,
+        "dispatches": 7097,
+        "failed_independent_checks": 0,
+        "scenarios": 1000
+      },
+      "interrupted_dirty": {
+        "checks": 1000,
+        "dispatches": 7052,
+        "failed_independent_checks": 0,
+        "scenarios": 1000
+      },
+      "interrupted_prefix": {
+        "checks": 1000,
+        "dispatches": 6929,
+        "failed_independent_checks": 0,
+        "scenarios": 1000
+      },
+      "irrelevant_edit": {
+        "checks": 1000,
+        "dispatches": 6958,
+        "failed_independent_checks": 0,
+        "scenarios": 1000
+      },
+      "output_changed": {
+        "checks": 1000,
+        "dispatches": 7095,
+        "failed_independent_checks": 0,
+        "scenarios": 1000
+      },
+      "plan_changed": {
+        "checks": 1000,
+        "dispatches": 6958,
+        "failed_independent_checks": 0,
+        "scenarios": 1000
+      },
+      "unchanged": {
+        "checks": 1000,
+        "dispatches": 6887,
+        "failed_independent_checks": 0,
+        "scenarios": 1000
+      }
+    },
+    "output_only": {
+      "input_changed": {
+        "checks": 1000,
+        "dispatches": 0,
+        "failed_independent_checks": 1000,
+        "scenarios": 1000
+      },
+      "interrupted_dirty": {
+        "checks": 1000,
+        "dispatches": 3364,
+        "failed_independent_checks": 1000,
+        "scenarios": 1000
+      },
+      "interrupted_prefix": {
+        "checks": 1000,
+        "dispatches": 3565,
+        "failed_independent_checks": 0,
+        "scenarios": 1000
+      },
+      "irrelevant_edit": {
+        "checks": 1000,
+        "dispatches": 0,
+        "failed_independent_checks": 0,
+        "scenarios": 1000
+      },
+      "output_changed": {
+        "checks": 1000,
+        "dispatches": 4249,
+        "failed_independent_checks": 0,
+        "scenarios": 1000
+      },
+      "plan_changed": {
+        "checks": 1000,
+        "dispatches": 6958,
+        "failed_independent_checks": 0,
+        "scenarios": 1000
+      },
+      "unchanged": {
+        "checks": 1000,
+        "dispatches": 0,
+        "failed_independent_checks": 0,
+        "scenarios": 1000
+      }
+    },
+    "project_checkpoint": {
+      "input_changed": {
+        "checks": 1000,
+        "dispatches": 7097,
+        "failed_independent_checks": 0,
+        "scenarios": 1000
+      },
+      "interrupted_dirty": {
+        "checks": 1000,
+        "dispatches": 7052,
+        "failed_independent_checks": 0,
+        "scenarios": 1000
+      },
+      "interrupted_prefix": {
+        "checks": 1000,
+        "dispatches": 3565,
+        "failed_independent_checks": 0,
+        "scenarios": 1000
+      },
+      "irrelevant_edit": {
+        "checks": 1000,
+        "dispatches": 6958,
+        "failed_independent_checks": 0,
+        "scenarios": 1000
+      },
+      "output_changed": {
+        "checks": 1000,
+        "dispatches": 7095,
+        "failed_independent_checks": 0,
+        "scenarios": 1000
+      },
+      "plan_changed": {
+        "checks": 1000,
+        "dispatches": 6958,
+        "failed_independent_checks": 0,
+        "scenarios": 1000
+      },
+      "unchanged": {
+        "checks": 1000,
+        "dispatches": 0,
+        "failed_independent_checks": 0,
+        "scenarios": 1000
+      }
+    }
+  },
+  "policy_simulations": 21000,
+  "real_runner_with_builder_double": {
+    "input_changed": 8,
+    "interrupted_dirty": 8,
+    "interrupted_prefix": 8,
+    "irrelevant_edit": 8,
+    "output_changed": 8,
+    "plan_changed": 8,
+    "unchanged": 8
+  },
+  "scenarios_per_case": 1000,
+  "scenarios_per_policy": 7000,
+  "scope": "Simulated dispatch counts and replayed synthetic faults. No live model calls.",
+  "seed": 20261117
+}

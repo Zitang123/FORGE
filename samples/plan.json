@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "goal": "Provide a simple temperature conversion utility.",
+  "tasks": [
+    {
+      "id": "convert",
+      "brief": "Write temperature.py. Expose fahrenheit(celsius) and return celsius * 9/5 + 32.",
+      "outputs": ["temperature.py"]
+    }
+  ],
+  "checks": [
+    {
+      "id": "known_temperatures",
+      "argv": ["python3", "-c", "from temperature import fahrenheit; assert fahrenheit(0) == 32; assert fahrenheit(-40) == -40"],
+      "timeout_seconds": 5
+    }
+  ],
+  "visual_review_required": false
+}
